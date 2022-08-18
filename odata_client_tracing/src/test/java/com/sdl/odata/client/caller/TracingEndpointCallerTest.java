@@ -62,7 +62,7 @@ public class TracingEndpointCallerTest {
 
     private static final String RESPONSE = "/response.xml";
 
-    private EndpointCaller caller = new TracingEndpointCaller(new Properties());
+    private final EndpointCaller caller = new TracingEndpointCaller(new Properties());
 
     @Value("${local.server.port}")
     private int port;
